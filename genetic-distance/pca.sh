@@ -6,6 +6,7 @@
 
 plink2=/u/project/pasaniuc/yiding/downloads/plink2
 flashpca=/u/project/pasaniuc/yiding/projects/subcontinental_prs_uncertainty/prs-uncertainty-experiment/pca/flashpca_x86-64
+# wget https://github.com/gabraham/flashpca/blob/master/exclusion_regions_hg19.txt
 long_ld_region=/u/project/pasaniuc/yiding/projects/subcontinental_prs_uncertainty/prs-uncertainty-experiment/pca/exclusion_regions_hg19.txt 
 
 pca_dir=/u/scratch/y/yiding/prs/ukbb-atlas/pca
