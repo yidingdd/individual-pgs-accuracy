@@ -29,7 +29,7 @@ smry_df <- data.frame(
   post_var = rowVars(pgs_mat),
   CI_90_lower = apply(pgs_mat, 1, quantile, probs = 0.05),
   CI_90_upper = apply(pgs_mat, 1, quantile, probs = 0.95)
-) %>% mutate(accuracy = 1 - post_var / (param$h2 * param$pheno_var))
+) %>% mutate(accuracy = 1 - post_var / (param$h2 * param$pheno_var), accuracy = accuracy * ( accuracy > 0 ))
 
 # Output
 write_tsv(smry_df, parser$output)
