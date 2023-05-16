@@ -60,4 +60,6 @@ Rscript summary.r \
     --out $YOUR_OUTPUT_DIR/${trait}.smry.txt
 ```
 
+Please read scripts for details.
+
         
