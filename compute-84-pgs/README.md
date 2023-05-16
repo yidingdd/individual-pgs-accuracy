@@ -30,7 +30,7 @@ The downloaded data contains essential information required for computing indivi
 - `snp-info`: This file contains the information of SNPs used to train PGS. 
 
 ## Step 3. Prepare your genotype data 
-To ensure compatibility between the weight file and the genotype file in LDpred2, we strongly recommend renaming the variant IDs in your genotype file to match the IDs provided in our weight file. For your convenience, we have provided example scripts (TODO) that can assist you in preparing your data for analysis.
+To ensure compatibility between the weight file and the genotype file in LDpred2, we strongly recommend renaming the variant IDs in your genotype file to match the IDs provided in our weight file. For your convenience, we have provided example scripts `prepare-data.sh` that can assist you in preparing your data for analysis.
 
 
 # Part 2. Compute individual PGS accuracy 
