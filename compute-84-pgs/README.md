@@ -17,7 +17,7 @@ mkdir -p $DOWNLOADED_DATA_DIR
 cd $DOWNLOADED_DATA_DIR
 
 # Download data from Figshare
-# The file is XXX GB, so the downloading process may take a while
+# The file is 11 GB, so the downloading process may take a while
 wget https://figshare.com/ndownloader/files/39869065
 
 # Unzip the downloaded file
