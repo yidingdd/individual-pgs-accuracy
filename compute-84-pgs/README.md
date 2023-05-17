@@ -26,7 +26,6 @@ unzip 40616537
 ```
 The downloaded data contains essential information required for computing individual PGS accuracy:  
 - `weight-mcmc`: This folder contains 84 PGS weight files. Unlike conventional weight files that typically contain a single column of weights, the weight files we provide may contain 500-1000 (the exact number varies among traits due to QC of MCMC chains) columns of weights. Each column represents a separate MCMC sampling from the posterior distribution of genetic effects, which will be used for computing the posterior PGS distribution in subsequent steps. 
-- `maf-train`: This folder contains the minor allele frequencies of PGS SNPs among the 371K UK Biobank British training individuals. 
 - `param`: This folder contains the heritability and phenotye variance of the 84 traits, which are essential parameters for computing individual PGS accuracy. 
 - `snp-info`: This file contains the information of SNPs used to train PGS. 
 
