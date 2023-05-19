@@ -23,6 +23,8 @@ wget https://figshare.com/ndownloader/files/40616537
 
 # Unzip the downloaded file
 unzip 40616537
+=======
+wget https://figshare.com/ndownloader/files/39869065
 ```
 The downloaded data contains essential information required for computing individual PGS accuracy:  
 - `weight-mcmc`: This folder contains 84 PGS weight files. Unlike conventional weight files that typically contain a single column of weights, the weight files we provide may contain 500-1000 (the exact number varies among traits due to QC of MCMC chains) columns of weights. Each column represents a separate MCMC sampling from the posterior distribution of genetic effects, which will be used for computing the posterior PGS distribution in subsequent steps. 
