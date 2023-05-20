@@ -18,17 +18,17 @@ cd $DOWNLOADED_DATA_DIR
 
 # Download data from Figshare
 # The file is 11 GB, so the downloading process may take a while
-wget https://figshare.com/ndownloader/files/40585295
-
+https://figshare.com/ndownloader/articles/22413970
 
 # Unzip the downloaded file
-unzip 40585295
+unzip 22413970
 ```
-The downloaded data contains essential information required for computing individual PGS accuracy:  
+The downloaded data contains essential information required for computing individual PGS accuracy and genetic distance:  
 - `weight-mcmc`: This folder contains 84 PGS weight files. Unlike conventional weight files that typically contain a single column of weights, the weight files we provide may contain 500-1000 (the exact number varies among traits due to QC of MCMC chains) columns of weights. Each column represents a separate MCMC sampling from the posterior distribution of genetic effects, which will be used for computing the posterior PGS distribution in subsequent steps. 
 - `maf-train`: This folder contains the minor allele frequencies of PGS SNPs among the 371K UK Biobank British training individuals. 
 - `param`: This folder contains the heritability and phenotye variance of the 84 traits, which are essential parameters for computing individual PGS accuracy. 
-- `snp-info`: This file contains the information of SNPs used to train PGS. 
+- `snp-info`: This file contains the information of SNPs used to train PGS.
+- `pca`: This folder contains the `meansd.txt` and `loadings.txt` output obtained from running flashpca on training data. You can project your target genotype data to the PC space of training data and compute the genetic distance. 
 
 ## Step 3. Prepare your genotype data 
 To ensure compatibility between the weight file and the genotype file in LDpred2, we strongly recommend renaming the variant IDs in your genotype file to match the IDs provided in our weight file. For your convenience, we have provided example scripts `prepare-data.sh` that can assist you in preparing your data for analysis.
